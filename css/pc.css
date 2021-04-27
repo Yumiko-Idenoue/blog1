@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+@media screen and (min-width:1024px){
+  .warapper {
+    display: flex;
+  }
+
+  .main {
+    order: 1;
+  }
+
+  .sidemenu {
+    order: 2;
+    width: 356px;
+  }
+
+  body {
+    max-width: 100%;
+  }
+
+  /* グローバルナビ */
+  .header_content .nav {
+    display: block;
+    position: absolute;
+    top: -32px;
+    right: 50px;
+    animation-name: fadeIn2;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+  }
+
+.header_content .nav ul{
+  display: flex;
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+
+.header_content .nav ul li a {
+  display: block;
+  width: 100px;
+  font-size: initial;
+  color: #444;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+.header_content .nav ul li a::after{
+  content: '';
+  position: relative;
+  display: block;
+  width: 0;
+  top: -20px;
+  margin: 0 auto;
+  border-bottom: 3px solid  #53b43f;
+  transition: width 0.3s ease-in-out;
+}
+
+.header_content .nav ul li a:hover::after {
+  width: 80%;
+}
+
+#open {
+  display: none;
+}
+
+/* グローバルナビここまで */
+
+/* ハンバーガーメニュー */
+
+.hamburger_menu{
+  display: none;
+}
+
+/* ハンバーガーメニューここまで */
+
+
+
+.container::before, .container::after{ 
+  height: 100%
+ } 
+
+/* セクションここまで */
+
+/* パンくずリスト */
+
+.breadcrumb li a {
+  font-size: 15px;
+  padding: 0 10px 0 10px;
+}
+
+/* パンくずリストここまで */
+
+
+/* サイドメニュー */
+
+ .sidemenu {
+  margin-right: 50px;
+} 
+
+
+.side_title span{
+
+  margin: 20px 20px 20px 20px;
+
+}
+
+
+/* 最近の投稿 */
+
+.recent_list {
+  width: 300px;
+  list-style-type: none;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* 最近の投稿ここまで */
+
+/* ランキング */
+
+
+.ranking_item {
+  margin: 0 0 35px 0;
+  padding: 0;
+}
+
+.recent_ranking .ranking_detail p{
+  width: 200px; 
+}
+
+/* ランキングここまで */
+/* サイドメニューここまで */
+
+
+.to_top{
+  border-width: 0 0 90px 90px;
+  bottom: -16px;
+  right: 0px;
+  line-height: 70px;
+}
+
+.btn{
+  opacity: 0.6;
+}
+
+
+.to_top .arrow {
+  padding: 7px;
+  top: 42px;
+  left: -30px;
+}
+
+
+
+/* トップへボタンここまで */
+ } 
+
+@media screen and (min-width:760px){
+
+  .recent_ranking {
+    display: grid;
+    grid-template-columns: repeat(2, 320px);
+    gap: 30px;
+  }
+
+.recent_list .recent_item { 
+  margin: 20px auto;
+ } 
+ 
+} 
+
+@media screen and (min-width:1024px){
+  
+  .recent_ranking {
+    display: block;
+    margin-left: 30px;
+  }
+
+  .ranking_item{
+    width: 90%; 
+  }
+} 
+
+
+
+@keyframes fadeIn1 {
+  0%{
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn2 {
+  0%{
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn3 {
+  0%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+

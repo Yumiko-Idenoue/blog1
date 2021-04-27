@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+
+/* パンくずリスト */
+
+.breadcrumbs ul li {
+  font-size: 10px;
+  padding: 10px 0;
+}
+
+.breadcrumbs ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 0px 5px 0px 5px;
+  cursor: pointer;
+} 
+
+.breadcrumb {
+  position: relative;
+  margin:  0;
+  padding: 0;
+  height: 60px;
+  line-height: 60px;
+  list-style: none;
+  background-color: rgb(230, 228, 228);
+  z-index: 1;
+}
+
+.breadcrumb li {
+  display: inline;
+  list-style: none;
+}
+
+.breadcrumb li:after {
+  content: '>';
+  padding: 2em 0.3em;
+  color: #555;
+}
+
+.breadcrumb li:last-child:after {
+  content: '';
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  font-size: 12px;
+  padding: 0 5px 0 15px;
+  color: #030202
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+/* パンくずリストここまで */
+
+
+
+
+/* メインメニュー */
+
+.main {
+  position: relative;
+  opacity: 1;
+  margin: 0px auto;
+  padding-top: 10px;
+  animation-name: fadeIn1;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  z-index: 2;
+}
+
+.main .article{
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 10px;
+}
+
+.main .article > img{
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30px; 
+}
+
+.main .article > p{
+  font-size: 18px;
+}
+
+
+/* メインメニューここまで */
+
+
